@@ -1,0 +1,167 @@
+
+/* -- Media Query -- */
+@media (min-width: 0px) {
+    /* celular p */
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-responsive a {
+        display: block;
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+
+    section {
+        padding: 6rem 2.5rem;
+    }
+
+    .home, .about {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .home-img, .about-img {
+        width: 80%;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .home-content, .about-content {
+        width: 100%;
+    }
+
+    .home-content div {
+        text-align: center;
+    }
+
+    .home-content h1, .about-content h1 {
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-box {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 375px) {
+
+    .portfolio-box {
+        width: 23em;
+    }
+
+}
+
+@media (min-width: 576px) {
+    /* celular m */
+    .home-img, .about-img {
+        width: 65%;
+        max-width: 65%;
+    }
+
+    .services-box {
+        width: 70%;
+    }
+
+    .portfolio-box {
+        width: 30em;
+    }
+}
+
+@media (min-width: 768px) {
+    /* tablet */
+    .menu-hamburguer {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .nav-responsive, .nav-responsive a {
+        display: none;
+    }
+
+    .home, .about {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .home-img, .about-img {
+        max-width: 35%;
+    }
+
+    .home-content, .about-content {
+        width: 50%;
+    }
+
+    .services-box {
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: auto auto;
+    }
+
+    form .input-box input {
+        width: 49%;
+    }
+}
+
+@media (min-width: 992px) {
+    /* laptop */
+    .services-container {
+        flex-direction: row;
+        gap: 1.2rem;
+    }
+
+    .pt1, .pt2 {
+        display: flex;
+    }
+
+    .portfolio-box, .portfolio-box {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* desktop */
+
+    .home-img, .about-img {
+        max-width: 30%;
+    }
+
+    .home-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .portfolio-container {
+        display: contents;
+    }
+
+    .portfolio-container img {
+        width: 570px;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    .pt1, .pt2 {
+        display: flex;
+    }
+}
